@@ -26,6 +26,7 @@ const animationTimeline = () => {
     skewX: "-15deg",
   };
 
+  // Declare variable according to library
   const tl = new TimelineMax();
 
   tl.to(".container", 0.1, {
