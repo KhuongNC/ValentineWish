@@ -262,7 +262,15 @@ const animationTimeline = () => {
         rotation: 90,
       },
       "+=1"
-    );
+    )
+    .from(".clickHereToReplay", 0.7, ideaTextTrans)
+    .to(".clickHereToReplay", 0.5, {
+      scale: 1.2,
+      x: 10,
+      backgroundColor: "rgb(21, 161, 237)",
+      color: "#fff",
+    });
+  // .to(".clickHereToReplay", 0.7, ideaTextTransLeave, "+=1.5");
 
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
