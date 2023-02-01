@@ -1,3 +1,6 @@
+let audio = document.getElementsByClassName("song")[0];
+audio.play();
+
 // Animation timeline
 const animationTimeline = () => {
   // Spit chars that needs to be animated individually
